@@ -1,1 +1,1 @@
-web: gunicorn Diseasepro.wsgi --log-file-
+web: gunicorn Diseasepro.wsgi --log-file -
