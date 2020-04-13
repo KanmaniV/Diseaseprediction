@@ -7,7 +7,7 @@ def Home_Page(Request):
 
 
 def Main_Page(Request):
-    return  render(Request, 'Diseaseapp/Main_page.html')
+    return  render(Request, 'Diseaseapp/Main_Page.html')
 
 def Logistic(Request):
     return render(Request, 'Diseaseapp/Logistic.html')
