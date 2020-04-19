@@ -10,9 +10,29 @@
 <br><br>
 <h3>Click here to check the logistic graph</h3>
 <br>
+
     <form action="btn2">
         <button class="button button1">Click Me</button>
 
     </form>
+    <script>
+function light(sw) {
+  var pic;
+  if (sw == 1) {
+    pic = "{%static 'images/apple.jpg' %}"
+  } else {
+    pic = "{%static 'images/chicken.jpg' %}"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+    <img id="myImage" src="">
+<p>
+<button type="button" onclick="light(1)">APPLE</button>
+<button type="button" onclick="light(0)">CHICKEN</button>
+</p>
+
+
 </body>
+
 </html>
