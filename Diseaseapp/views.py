@@ -9,5 +9,3 @@ def Home_Page(Request):
 def Main_Page(Request):
     return  render(Request, 'Diseaseapp/Main_Page.html',{'ans':'images/logistic.jpeg'})
 
-def Logistic(Request):
-    return render(Request, 'Diseaseapp/Logistic.html')

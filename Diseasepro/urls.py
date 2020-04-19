@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.Home_Page),
     path('btn1', views.Main_Page, name="btn1"),
-    path('btn2', views.Logistic, name="btn2"),
+
 ]
