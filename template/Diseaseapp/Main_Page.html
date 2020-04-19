@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet"  href="{%static 'css/Main_Page1.css' %}">
+    <style>
+img {
+  height:500px;
+  width:500px;
+  float:right;
+}
+</style>
 </head>
 <body>
-<br><br>
-<h3>Click here to check the logistic graph</h3>
-<br>
-
-    <form action="btn2">
-        <button class="button button1">Click Me</button>
-
-    </form>
-    <script>
+<script>
 function light(sw) {
   var pic;
-  if (sw == 1) {
+  if (sw == 0) {
     pic = "{%static 'images/apple.jpg' %}"
-  } else {
+  }
+  else if (sw == 1) {
     pic = "{%static 'images/chicken.jpg' %}"
+  }
+  else  {
+    pic = "{%static 'images/logistic.jpeg' %}"
   }
   document.getElementById('myImage').src = pic;
 }
 </script>
-    <img id="myImage" src="">
+    <img id="myImage" src="{%static 'images/graph.png' %}">
 <p>
-<button type="button" onclick="light(1)">APPLE</button>
-<button type="button" onclick="light(0)">CHICKEN</button>
+<h3>Click here to check apple</h3>
+<button class="button button1" type="button" onclick="light(0)">APPLE</button><br>
+<h3>Click here to check the chicken</h3>
+<button class="button button1" type="button" onclick="light(1)">CHICKEN</button><br>
+<h3>Click here to check the logistic graph</h3>
+<button class="button button1" type="button" onclick="light(2)">LOGISTIC</button><br>
 </p>
 
 
